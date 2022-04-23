@@ -15,7 +15,7 @@ Yatube API offers JSON Web Token ([JWT](https://jwt.io))
 | Posts                      | Comments                      | Groups                      | Subscriptions | Token                |
 | -------------------------- | ----------------------------- | --------------------------- | ------------- | -------------------- |
 | Getting posts              | Getting comments              | List of groups              | Subscriptions | Get a JWT token      |
-| Creating a post            | Adding a comment              | information about the group | Subscription  | Update the JWT token |
+| Creating a post            | Adding a comment              | Information about the group | Subscription  | Update the JWT token |
 | Getting a post             | Getting a comment             |                             |               | Check the JWT token  |
 | Updating the post          | Updating the comment          |                             |               |                      |
 | Partial update of the post | Partial update of the comment |                             |               |                      |
