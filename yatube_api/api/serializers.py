@@ -32,10 +32,9 @@ class FollowSerializer(serializers.ModelSerializer):
     user = SlugRelatedField(
         read_only=True,
         slug_field="username",
-        default=serializers.CurrentUserDefault(),
     )
-    author = SlugRelatedField(read_only=True, slug_field="username")
+    following = SlugRelatedField(read_only=True, slug_field="username")
 
     class Meta:
-        fields = ("user", "following")
+        fields = "__all__"
         model = Follow
