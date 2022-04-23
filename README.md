@@ -12,10 +12,10 @@ Yatube API offers JSON Web Token ([JWT](https://jwt.io))
 
 ##### List of operations
 
-| Posts                      | Comments                      | Groups                      | Subscriptions | Token                |
+| Posts                      | Comments                      | Groups                      | Following     | Token                |
 | -------------------------- | ----------------------------- | --------------------------- | ------------- | -------------------- |
-| Getting posts              | Getting comments              | List of groups              | Subscriptions | Get a JWT token      |
-| Creating a post            | Adding a comment              | Information about the group | Subscription  | Update the JWT token |
+| Getting posts              | Getting comments              | List of groups              | Following     | Get a JWT token      |
+| Creating a post            | Adding a comment              | Information about the group | Follow        | Update the JWT token |
 | Getting a post             | Getting a comment             |                             |               | Check the JWT token  |
 | Updating the post          | Updating the comment          |                             |               |                      |
 | Partial update of the post | Partial update of the comment |                             |               |                      |
