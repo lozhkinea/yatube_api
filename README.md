@@ -73,10 +73,10 @@ Get a JWT token
 
 ```bash
 $ curl \
->   -X POST \
->   -H "Content-Type: application/json" \
->   -d '{"username": "user", "password": "P@ssword"}' \
->   http://localhost:8000/api/v1/jwt/create/
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"username": "user", "password": "P@ssword"}' \
+    http://localhost:8000/api/v1/jwt/create/
 
 . . .
 
