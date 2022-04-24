@@ -12,6 +12,7 @@ Yatube API offers JSON Web Token ([JWT](https://jwt.io))
 
 ##### List of operations
 
+<<<<<<< HEAD
 | Posts                      | Comments                      | Groups                      | Follow     | Token                |
 | -------------------------- | ----------------------------- | --------------------------- | ---------- | -------------------- |
 | Getting posts              | Getting comments              | List of groups              | Followings | Get a JWT token      |
@@ -20,6 +21,16 @@ Yatube API offers JSON Web Token ([JWT](https://jwt.io))
 | Updating the post          | Updating the comment          |                             |            |                      |
 | Partial update of the post | Partial update of the comment |                             |            |                      |
 | Deleting a post            | Deleting a comment            |                             |            |                      |
+=======
+| Posts                      | Comments                      | Groups                      | Follow        | Token                |
+| -------------------------- | ----------------------------- | --------------------------- | ------------- | -------------------- |
+| Getting posts              | Getting comments              | List of groups              | Followings    | Get a JWT token      |
+| Creating a post            | Adding a comment              | Information about the group | Following     | Update the JWT token |
+| Getting a post             | Getting a comment             |                             |               | Check the JWT token  |
+| Updating the post          | Updating the comment          |                             |               |                      |
+| Partial update of the post | Partial update of the comment |                             |               |                      |
+| Deleting a post            | Deleting a comment            |                             |               |                      |
+>>>>>>> b9bcccf8742fde7208c8e45ec196d3a47bfd89d2
 
 ## Installation
 
