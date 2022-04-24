@@ -12,14 +12,14 @@ Yatube API offers JSON Web Token ([JWT](https://jwt.io))
 
 ##### List of operations
 
-| Posts                      | Comments                      | Groups                      | Subscriptions | Token                |
-| -------------------------- | ----------------------------- | --------------------------- | ------------- | -------------------- |
-| Getting posts              | Getting comments              | List of groups              | Subscriptions | Get a JWT token      |
-| Creating a post            | Adding a comment              | information about the group | Subscription  | Update the JWT token |
-| Getting a post             | Getting a comment             |                             |               | Check the JWT token  |
-| Updating the post          | Updating the comment          |                             |               |                      |
-| Partial update of the post | Partial update of the comment |                             |               |                      |
-| Deleting a post            | Deleting a comment            |                             |               |                      |
+| Posts                      | Comments                      | Groups                      | Follow     | Token                |
+| -------------------------- | ----------------------------- | --------------------------- | ---------- | -------------------- |
+| Getting posts              | Getting comments              | List of groups              | Followings | Get a JWT token      |
+| Creating a post            | Adding a comment              | Information about the group | Following  | Update the JWT token |
+| Getting a post             | Getting a comment             |                             |            | Check the JWT token  |
+| Updating the post          | Updating the comment          |                             |            |                      |
+| Partial update of the post | Partial update of the comment |                             |            |                      |
+| Deleting a post            | Deleting a comment            |                             |            |                      |
 
 ## Installation
 
@@ -69,21 +69,21 @@ python manage.py runserver
 
 You can use [curl](https://curl.se/) to issue requests.
 
-Get a JWT token
+Get a JWT token:
 
 ```bash
 $ curl \
->   -X POST \
->   -H "Content-Type: application/json" \
->   -d '{"username": "user", "password": "P@ssword"}' \
->   http://localhost:8000/api/v1/jwt/create/
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"username": "user", "password": "P@ssword"}' \
+    http://localhost:8000/api/v1/jwt/create/
 
 . . .
 
 {"refresh":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MDgwMzQwMywianRpIjoiMmIxYjI1YWI1MTQxNDc4MGE5MWZhMWFlNzQ4MDhmYzgiLCJ1c2VyX2lkIjozfQ.TNdPUCZtDbDDp1fOs0ab1zKmWom1R0AagYTkc2lNWas","access":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUwODAzNDAzLCJqdGkiOiI5OTI0OTExMGRkNjY0Yjc4ODIyMWQxMjIyNDU5MGE1YiIsInVzZXJfaWQiOjN9.KG2PrpJ4elbpmFCU0TpacHmQKjabIIvGEHS4HZwrpKI"}
 ```
 
-Creating a post
+Creating a post:
 
 ```bash
 curl \
@@ -98,7 +98,7 @@ curl \
   {"id":1,"author":"user","text":"Test post","pub_date":"2022-04-23T12:40:11.522939Z","image":null,"group":null}
 ```
 
-Getting posts
+Getting posts:
 
 ```bash
 curl \
