@@ -4,7 +4,7 @@
 
 ## Features
 
-This API features the basic operations of the [Yatube]() project.
+This API features the basic operations of the [Yatube](https://github.com/lozhkinea/yatube_blog) project.
 
 ##### Authentication
 
